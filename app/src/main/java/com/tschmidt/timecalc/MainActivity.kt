@@ -113,11 +113,11 @@ class MainActivity : AppCompatActivity() {
             try {
                 result = getRoundedIndustryMinutes(timeToConvert.toString()).toString()
             } catch (exception: NumberFormatException) {
-                result = "ERROR:WRONGNUMBER"
+                result = "ERROR:WRONGNUM"
             }
         } else {
             try {
-                getRealTime(timeToConvert.toString())
+                result = getRealTime(timeToConvert.toString())
             } catch (e: java.lang.NumberFormatException) {
                 result = "ERROR:WRONGTIME"
             }
